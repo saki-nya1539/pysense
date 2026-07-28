@@ -1,0 +1,142 @@
+<svg viewBox="0 0 900 1440" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif">
+  <rect x="0" y="0" width="900" height="1440" fill="#F8F9FB"/>
+
+  <!-- ===== ① データプレビュー / サイドバー ===== -->
+  <text x="24" y="28" font-size="14" font-weight="bold" fill="#374151">① データプレビュー（サイドバー共通）</text>
+
+  <rect x="20" y="40" width="860" height="300" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <rect x="20" y="40" width="220" height="300" fill="#F4F5F7" stroke="#E5E7EB"/>
+  <text x="36" y="64" font-size="12" font-weight="bold" fill="#374151">データ</text>
+  <rect x="36" y="76" width="188" height="26" rx="4" fill="#FFFFFF" stroke="#D1D5DB"/>
+  <text x="44" y="93" font-size="9" fill="#6B7280">CSVファイルをアップロード</text>
+  <rect x="36" y="110" width="188" height="26" rx="4" fill="#3B82F6"/>
+  <text x="130" y="127" font-size="9" fill="#FFFFFF" text-anchor="middle">サンプルデータを使う</text>
+
+  <line x1="36" y1="150" x2="224" y2="150" stroke="#E5E7EB"/>
+
+  <text x="36" y="166" font-size="9" fill="#6B7280">日付列 / カテゴリ列 / 金額列</text>
+  <rect x="36" y="172" width="188" height="20" rx="4" fill="#FFFFFF" stroke="#D1D5DB"/>
+  <text x="44" y="186" font-size="8" fill="#374151">date</text>
+  <rect x="36" y="196" width="188" height="20" rx="4" fill="#FFFFFF" stroke="#D1D5DB"/>
+  <text x="44" y="210" font-size="8" fill="#374151">category</text>
+  <rect x="36" y="220" width="188" height="20" rx="4" fill="#FFFFFF" stroke="#D1D5DB"/>
+  <text x="44" y="234" font-size="8" fill="#374151">amount</text>
+
+  <text x="36" y="256" font-size="9" fill="#6B7280">異常検知の手法</text>
+  <rect x="36" y="262" width="188" height="20" rx="4" fill="#FFFFFF" stroke="#D1D5DB"/>
+  <text x="44" y="276" font-size="8" fill="#374151">z-score（統計的）</text>
+
+  <rect x="36" y="292" width="188" height="28" rx="4" fill="#3B82F6"/>
+  <text x="130" y="310" font-size="10" fill="#FFFFFF" text-anchor="middle">▶ 分析を実行</text>
+
+  <!-- タブ -->
+  <rect x="256" y="52" width="120" height="26" rx="4" fill="#EFF6FF"/>
+  <text x="316" y="69" font-size="9" fill="#3B82F6" text-anchor="middle" font-weight="bold">データプレビュー</text>
+  <text x="440" y="69" font-size="9" fill="#9CA3AF" text-anchor="middle">支出トレンド</text>
+  <text x="540" y="69" font-size="9" fill="#9CA3AF" text-anchor="middle">異常検知</text>
+  <text x="650" y="69" font-size="9" fill="#9CA3AF" text-anchor="middle">来月の支出予測</text>
+  <line x1="256" y1="86" x2="856" y2="86" stroke="#E5E7EB"/>
+
+  <text x="256" y="106" font-size="9" font-weight="bold" fill="#374151">アップロードデータ（先頭50行）</text>
+  <rect x="256" y="114" width="600" height="110" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="256" y="114" width="600" height="20" fill="#F4F5F7"/>
+  <text x="266" y="128" font-size="8" fill="#6B7280">date</text>
+  <text x="386" y="128" font-size="8" fill="#6B7280">category</text>
+  <text x="506" y="128" font-size="8" fill="#6B7280">amount</text>
+  <text x="266" y="150" font-size="8" fill="#374151">2026-05-01</text>
+  <text x="386" y="150" font-size="8" fill="#374151">食費</text>
+  <text x="506" y="150" font-size="8" fill="#374151">1,850</text>
+  <text x="266" y="170" font-size="8" fill="#374151">2026-05-02</text>
+  <text x="386" y="170" font-size="8" fill="#374151">交通費</text>
+  <text x="506" y="170" font-size="8" fill="#374151">560</text>
+
+  <text x="256" y="252" font-size="9" font-weight="bold" fill="#374151">列の自動判定結果</text>
+  <rect x="256" y="260" width="600" height="60" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="266" y="280" font-size="8" fill="#374151">date → 日付列として認識</text>
+  <text x="266" y="296" font-size="8" fill="#374151">category → カテゴリ列として認識（8種類検出）</text>
+  <text x="266" y="312" font-size="8" fill="#374151">amount → 金額列として認識</text>
+
+  <!-- ===== ② 支出トレンド ===== -->
+  <text x="24" y="370" font-size="14" font-weight="bold" fill="#374151">② 支出トレンド（月別推移・カテゴリ別内訳）</text>
+  <rect x="20" y="384" width="860" height="260" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <text x="40" y="410" font-size="10" font-weight="bold" fill="#374151">月別支出の推移</text>
+  <polyline points="40,560 140,545 240,555 340,520 440,500 540,480"
+            fill="none" stroke="#3B82F6" stroke-width="2"/>
+  <circle cx="40" cy="560" r="3" fill="#3B82F6"/>
+  <circle cx="140" cy="545" r="3" fill="#3B82F6"/>
+  <circle cx="240" cy="555" r="3" fill="#3B82F6"/>
+  <circle cx="340" cy="520" r="3" fill="#3B82F6"/>
+  <circle cx="440" cy="500" r="3" fill="#3B82F6"/>
+  <circle cx="540" cy="480" r="3" fill="#3B82F6"/>
+  <line x1="40" y1="600" x2="600" y2="600" stroke="#D1D5DB"/>
+
+  <rect x="640" y="410" width="200" height="200" rx="4" fill="#F4F5F7"/>
+  <text x="652" y="430" font-size="8" fill="#374151">2026年05月の支出は</text>
+  <text x="652" y="444" font-size="8" fill="#374151">「食費」が最も多く、</text>
+  <text x="652" y="458" font-size="8" fill="#374151">¥42,000（全体の35.2%）</text>
+  <text x="652" y="472" font-size="8" fill="#374151">を占めています。</text>
+
+  <!-- 積み上げ棒グラフ簡易表現 -->
+  <rect x="60" y="616" width="30" height="14" fill="#3B82F6"/>
+  <rect x="60" y="602" width="30" height="12" fill="#93C5FD"/>
+  <rect x="160" y="610" width="30" height="20" fill="#3B82F6"/>
+  <rect x="160" y="596" width="30" height="12" fill="#93C5FD"/>
+  <rect x="260" y="608" width="30" height="22" fill="#3B82F6"/>
+  <rect x="260" y="592" width="30" height="14" fill="#93C5FD"/>
+
+  <!-- ===== ③ 異常検知 ===== -->
+  <text x="24" y="680" font-size="14" font-weight="bold" fill="#374151">③ 異常検知（z-score / Isolation Forest）</text>
+  <rect x="20" y="694" width="860" height="330" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <rect x="640" y="710" width="200" height="120" rx="4" fill="#FEF2F2"/>
+  <text x="652" y="730" font-size="8" fill="#991B1B">3件の取引が、通常より</text>
+  <text x="652" y="744" font-size="8" fill="#991B1B">大きく外れた支出として</text>
+  <text x="652" y="758" font-size="8" fill="#991B1B">検出されました。</text>
+  <text x="652" y="776" font-size="7.5" fill="#991B1B">・05-14 娯楽 ¥18,200</text>
+  <text x="652" y="790" font-size="7.5" fill="#991B1B">・05-22 医療費 ¥12,400</text>
+
+  <text x="40" y="726" font-size="10" font-weight="bold" fill="#374151">支出の散布図（異常は赤色）</text>
+  <line x1="60" y1="960" x2="600" y2="960" stroke="#D1D5DB"/>
+  <line x1="60" y1="760" x2="60" y2="960" stroke="#D1D5DB"/>
+  <circle cx="90" cy="900" r="4" fill="#3B82F6"/>
+  <circle cx="150" cy="890" r="4" fill="#3B82F6"/>
+  <circle cx="210" cy="910" r="4" fill="#3B82F6"/>
+  <circle cx="270" cy="880" r="4" fill="#3B82F6"/>
+  <circle cx="330" cy="895" r="4" fill="#3B82F6"/>
+  <circle cx="390" cy="800" r="5" fill="#DC2626"/>
+  <circle cx="450" cy="905" r="4" fill="#3B82F6"/>
+  <circle cx="510" cy="830" r="5" fill="#DC2626"/>
+
+  <text x="40" y="1000" font-size="9" font-weight="bold" fill="#374151">検出された異常取引一覧</text>
+  <rect x="40" y="1008" width="800" height="30" fill="#F4F5F7"/>
+  <text x="52" y="1027" font-size="8" fill="#6B7280">日付</text>
+  <text x="182" y="1027" font-size="8" fill="#6B7280">カテゴリ</text>
+  <text x="312" y="1027" font-size="8" fill="#6B7280">金額</text>
+  <text x="442" y="1027" font-size="8" fill="#6B7280">z-score</text>
+  <text x="572" y="1027" font-size="8" fill="#6B7280">説明</text>
+
+  <!-- ===== ④ 来月の支出予測 ===== -->
+  <text x="24" y="1090" font-size="14" font-weight="bold" fill="#374151">④ 来月の支出予測（線形回帰）</text>
+  <rect x="20" y="1104" width="860" height="290" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <text x="40" y="1130" font-size="10" font-weight="bold" fill="#374151">実績と予測の推移</text>
+  <polyline points="60,1300 160,1280 260,1290 360,1260 460,1240"
+            fill="none" stroke="#3B82F6" stroke-width="2"/>
+  <line x1="460" y1="1240" x2="560" y2="1210" stroke="#DC2626" stroke-width="2" stroke-dasharray="5,4"/>
+  <circle cx="560" cy="1210" r="5" fill="#DC2626"/>
+  <line x1="60" y1="1340" x2="620" y2="1340" stroke="#D1D5DB"/>
+
+  <rect x="660" y="1130" width="180" height="140" rx="4" fill="#F4F5F7"/>
+  <text x="672" y="1150" font-size="8" fill="#374151">月ごとの支出は1か月</text>
+  <text x="672" y="1164" font-size="8" fill="#374151">あたり平均+3,200円の</text>
+  <text x="672" y="1178" font-size="8" fill="#374151">ペースで増加していま</text>
+  <text x="672" y="1192" font-size="8" fill="#374151">す（R²=0.82）。</text>
+  <text x="672" y="1210" font-size="8" fill="#374151">2026年06月の支出は</text>
+  <text x="672" y="1224" font-size="8" fill="#374151">約118,000円と予測</text>
+  <text x="672" y="1238" font-size="8" fill="#374151">されます（95%区間：</text>
+  <text x="672" y="1252" font-size="8" fill="#374151">104,000〜132,000円）。</text>
+
+  <text x="40" y="1420" font-size="8" fill="#9CA3AF">※ 予測はあくまで過去の傾向に基づく統計的な推定であり、実際の支出を保証するものではありません。</text>
+</svg>
