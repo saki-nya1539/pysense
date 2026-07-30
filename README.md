@@ -2,6 +2,9 @@
 
 家計簿の取引データを「見える化」し、異常な支出と来月の見通しに気づけるようにするWebアプリ
 
+![CI](https://github.com/saki-nya1539/pysense/actions/workflows/ci.yml/badge.svg)
+| CI/CD | GitHub Actions | pushのたびに`pytest`を自動実行し、テストが通ることを継続的に検証 |
+
 ## 目次
 
 - [概要](#概要)
